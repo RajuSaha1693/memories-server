@@ -17,7 +17,7 @@ app.use('/user',userRoutes)
 app.get('/',(req,res)=>{
     res.send('Hello Memories Api');
 })
-const CONNECTION_URL='mongodb://rootuser:rootuser@rajusaha1693-mongo-production/memories'
+const CONNECTION_URL='mongodb://rootuser:rootuser@rajusaha1693-mongo-production/admin'
 const PORT=process.env.PORT || 5000
 
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})
